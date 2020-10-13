@@ -37,7 +37,7 @@
     left: 480px;
     top: 130px;
     left: 480px;
-    animation: block 1s infinite linear;
+    animation: block 2s infinite linear;
 }
 
 @keyframes block {
