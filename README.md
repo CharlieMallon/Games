@@ -1,4 +1,4 @@
-#Gaming Fun!
+# Gaming Fun!
 
 This is a repo of games that i build from videos or online tutorials.  It is for me to build my skills and explain to myself what is going on in the code.
 
