@@ -1,4 +1,5 @@
 import {update as updateSnake, draw as drawSnake, SNAKE_SPEED} from '/js/snake/snake.js'
+import {update as updateFood, draw as drawFood} from '/js/snake/food.js'
 
 let lastRenderTime = 0
 const gameBoard = document.getElementById('game-board')
@@ -20,11 +21,16 @@ window.requestAnimationFrame(main)
 
 //update game logic
 function update() {
-    updateSnake(gameBoard)
+    updateSnake()
+    updateFood()
+    checkDeath()
 }
 
 
 //draws the next game frame - based on the update loop
 function draw() {
-    drawSnake()
+    gameBoard.innerHTML = ''
+    drawSnake(gameBoard)
+    drawFood(gameBoard)
 }
+
