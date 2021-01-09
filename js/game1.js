@@ -6,7 +6,7 @@ function jump(){
         character.classList.add("animate");
     }
     setTimeout(function() {
-       character.classList.remove("animate")
+        character.classList.remove("animate")
     },500);
 }
 

@@ -1,0 +1,31 @@
+h2 {
+    margin-top: 0px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.container {
+    
+}
+
+.row{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    text-align: center;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border: 1px solid black;
+    height: 160px;
+    width: 160px;
+    margin: 20px;
+    padding: 20px;
+}
+
+.text {
+    padding-bottom: 20px;
+}
