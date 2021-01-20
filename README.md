@@ -1,11 +1,11 @@
 # Gaming Fun!
 
-This is a repo of games that i build from videos or online tutorials.  It is for me to build my skills and explain to myself what is going on in the code.
+This is a repo of games that I have build (and am building) from videos or online tutorials.  It is for me to practice my javascript skills.
 
-Game One - Jump
+Game One - Jump (Completed)
 https://www.youtube.com/watch?v=bG2BmmYr9NQ&feature=emb_title
 
-Game Two - Pairs
+Game Two - Pairs (Stalled)
 https://www.youtube.com/watch?v=ZniVgo8U7ek&feature=emb_logo
 
 Photo credits
@@ -17,7 +17,7 @@ Photo credits
     <span>Photo by <a href="https://unsplash.com/@ravipalwe?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Ravi Palwe</a> on <a href="https://unsplash.com/s/photos/toy?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span>
     <span>Photo by <a href="https://unsplash.com/@ninjason?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Jason Leung</a> on <a href="https://unsplash.com/s/photos/toy?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span>
 
-Game Three - Snake
+Game Three - Snake (Completed)
     https://www.youtube.com/watch?v=QTcIXok9wNY&feature=emb_logo
 
 
