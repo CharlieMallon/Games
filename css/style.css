@@ -10,7 +10,8 @@ body {
 }
 
 a {
-	color: #809fff;
+	color: #eee;
+	text-decoration: none;
 }
 
 body.light-mode {
@@ -35,18 +36,31 @@ a.light-mode {
 	justify-content: center;
 	align-items: center;
 	height: 160px;
-	width: 160px;
+	width: 200px;
 	margin: 20px;
-	padding: 20px;
+	padding: 15px;
 	background-color: #2c2c2c;
 	border-radius: 15px;
 }
 
+.title{
+	height: 30px;
+	padding: 0px;
+	margin: 0px;
+}
+
 .text {
-	padding-bottom: 20px;
+	display: flex;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	height: 70px;
+	flex-direction: column;
+	justify-content: center;
 }
 
 button {
 	border-radius: 5px;
 	width: 100px;
+	height: 30px;
+	background-color: purple;
 }
