@@ -152,9 +152,19 @@ let gameOver = false
 //game loop set up, make the game move.
 function main (currentTime) {
     if (gameOver) {
-        if (confirm('You Lost. Press OK to restart')) {
-            window.location = "/snake.html"
-        }
+        Swal.fire({
+            title: 'You Lose!',
+            showDenyButton: true,
+            confirmButtonText: `Play again!`,
+            denyButtonText: `Go back`,
+        }).then((result) => {
+            /* Read more about isConfirmed, isDenied below */
+            if (result.isConfirmed) {
+                location.reload();
+            } else if (result.isDenied) {
+                location.replace("index.html");
+            }
+        })
         return
     }
 
