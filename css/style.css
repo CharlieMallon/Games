@@ -58,9 +58,12 @@ a.light-mode {
 	justify-content: center;
 }
 
-button {
+.button {
+	display: flex;
 	border-radius: 5px;
 	width: 100px;
 	height: 30px;
 	background-color: purple;
+	flex-direction: column;
+	justify-content: center;
 }
