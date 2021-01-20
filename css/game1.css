@@ -3,6 +3,11 @@
     margin: 0;
 }
 
+body{
+    color: #eee;
+	background: #121212;
+}
+
 h1{
     font-size: 40px;
 }
@@ -10,7 +15,7 @@ h1{
 #game{
     width: 500px;
     height: 200px;
-    border:1px solid black;
+    background: #ccc;
     margin: 20px;
 }
 
