@@ -19,6 +19,18 @@ var checkDead = setInterval(function(){
     if(blockLeft<170 && blockLeft>150 && characterTop>=130){
         block.style.animation = "none";
         block.style.display = "none";
-        alert("YouLose!");
+        Swal.fire({
+            title: 'You Lose!',
+            showDenyButton: true,
+            confirmButtonText: `Play again!`,
+            denyButtonText: `Go back`,
+        }).then((result) => {
+            /* Read more about isConfirmed, isDenied below */
+            if (result.isConfirmed) {
+                location.reload();
+            } else if (result.isDenied) {
+                location.replace("index.html");
+            }
+        })
     }
 },10);
