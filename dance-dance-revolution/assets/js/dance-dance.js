@@ -1,3 +1,5 @@
+const DIRECTIONS = ["ArrowLeft", "ArrowUp", "ArrowDown", "ArrowRight"]
+let ACTIVE = null;
 
 const board = document.getElementById('board');
 const generator = document.getElementById('new-row-generator')
@@ -7,6 +9,9 @@ const createRow = () => {
     //create a row of arrows
     const newRow = board.cloneNode(true);
     const randomizer = Math.floor(Math.random() * 4);
+
+    //sets a which arrow is active on the row
+    newRow.setAttribute("data-active", randomizer);
 
     //colour random arrow blue and rest transparent
     for (let i = 0; i < 4; i++) {
@@ -31,6 +36,16 @@ const createRow = () => {
 
 const animateRow = (row) => {
 
+    const rowTop = row.getBoundingClientRect().top; // top of new row
+    const boardTop = board.getBoundingClientRect().top // top of board row
+
+    const proximity = rowTop - boardTop; //how close are they together
+
+    //set when the row is active and therfore can be pressed
+    setTimeout(() => {
+        ACTIVE = row
+    }, proximity - 100)
+
     //move the arrow up the screen
     const options = [{ transform: "translateY(-10000px)" }];
 
@@ -44,8 +59,24 @@ const animateRow = (row) => {
 
 }
 
+const handleKeyDown = (event) => {
+
+    const activeArrow = ACTIVE.getAttribute("data-active");
+    const pressedKey = DIRECTIONS.findIndex((direction) => direction === event.key);
+
+    console.log(activeArrow, pressedKey)
+
+    if (pressedKey == activeArrow) {
+        console.log("yay");
+    } else {
+        console.log("miss");
+    }
+}
+
+
 const startGame = () => {
 
+    document.addEventListener('keydown', handleKeyDown);
     // set the interval of when to show the arrows
     setInterval(() => {
         createRow();
