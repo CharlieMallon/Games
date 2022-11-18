@@ -22,6 +22,11 @@ const createRow = () => {
     generator.append(newRow);
     //animate the arrow
     animateRow(newRow)
+
+    //romoves the arrow from the dom
+    setTimeout(() => {
+        newRow.remove();
+    }, 5000)
 }
 
 const animateRow = (row) => {
@@ -39,4 +44,12 @@ const animateRow = (row) => {
 
 }
 
-createRow();
+const startGame = () => {
+
+    // set the interval of when to show the arrows
+    setInterval(() => {
+        createRow();
+    }, 1000)
+}
+
+startGame();
