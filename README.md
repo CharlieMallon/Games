@@ -11,3 +11,4 @@ Snake (Completed)
 
 Games to make later
     tick tack toe - https://www.youtube.com/watch?v=Y-GkMjUZsmM
+    pong - https://developer.mozilla.org/en-US/docs/Games/Tutorials/2D_Breakout_game_pure_JavaScript
