@@ -15,11 +15,21 @@
 
 <body>
     <h1>Rock, Paper, Scissors, Lizard, Spock</h1>
-    <p>Rock</p>
-    <p>Paper</p>
-    <p>Scissors</p>
-    <p>Lizard</p>
-    <p>Spock</p>
+    <div>
+        <p class="player" data-choice="rock">Rock</p>
+    </div>
+    <div>
+        <p class="player" data-choice="paper">Paper</p>
+    </div>
+    <div>
+        <p class="player" data-choice="scissors">Scissors</p>
+    </div>
+    <div>
+        <p class="player" data-choice="lizard">Lizard</p>
+    </div>
+    <div>
+        <p class="player" data-choice="spock">Spock</p>
+    </div>
     <div>
         <p>
             Sissors cuts paper covers Rock crushes
@@ -28,6 +38,20 @@
             Spock vaporizes Rock crushes Sissors.
         </p>
     </div>
+
+    <div>
+        <h2>Computer Choice</h2>
+        <p id="computerChoice"></p>
+    </div>
+    <div>
+        <h2>User Choice</h2>
+        <p id="userChoice"></p>
+    </div>
+    <div>
+        <h2>Results</h2>
+        <p id="result"></p>
+    </div>
 </body>
 <script src="assets\js\rock-paper-scissors.js"></script>
+
 </html>
