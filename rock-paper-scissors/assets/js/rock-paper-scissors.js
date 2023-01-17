@@ -1,16 +1,53 @@
-// 0 = rock
-// 1 = scissors
-// 2 = paper
+// computer choice
+const num = Math.floor(Math.random() * 5);
+const options = [
+    'rock', 'scissors', 'paper', 'lizard', 'spock'
+]
+const computerChoice = options[num]
 
-// const options = [
-//     ['draw', 'player wins', 'player loses'],
-//     ['player loses', 'draw', 'player wins'],
-//     ['player wins', 'player loses', 'draw'],
-// ]
+console.log(computerChoice)
 
-// const playerChoice = 2 // defined by the player click
-// const computerChoice = Math.floor(Math.random() * 2)  // generate randomly 
+// users choice
+const userChoice = 'scissors';
 
-// const winState = options[playerChoice][computerChoice];
+// result matrix
+const matrix = {
+    rock: {
+        rock: 'draw',
+        paper: 'loose',
+        scissors: 'win',
+        lizard: 'loose',
+        spock: 'win',
+    },
+    paper: {
+        rock: 'win',
+        paper: 'draw',
+        scissors: 'loose',
+        lizard: 'loose',
+        spock: 'win',
+    },
+    scissors: {
+        rock: 'loose',
+        paper: 'win',
+        scissors: 'draw',
+        lizard: 'win',
+        spock: 'loose',
+    },
+    lizard: {
+        rock: 'loose',
+        paper: 'win',
+        scissors: 'loose',
+        lizard: 'draw',
+        spock: 'win',
+    },
+    spock: {
+        rock: 'loose',
+        paper: 'loose',
+        scissors: 'win',
+        lizard: 'loose',
+        spock: 'draw',
+    },
+}
+const result = matrix[userChoice][computerChoice]
 
-console.log('hi')
+console.log(result)
